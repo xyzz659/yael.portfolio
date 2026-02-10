@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Projects by Marianne Louise Medrano">
+    <title>Projects - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">❤️</button>
+    
+    <!-- Navigation -->
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html" class="active" aria-current="page">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Projects Header -->
+    <header id="main-content">
+        <h1>My Projects</h1>
+        <p>Check out some of my recent work and accomplishments</p>
+    </header>
+    
+    <!-- Image Slider for Featured Projects -->
+    <section>
+        <h2>Featured Projects</h2>
+        <div class="slider">
+            <div class="slides">
+                <div class="slide">
+                    <img src="portfolio.jpg" alt="Portfolio Website Project">
+                    <div class="slide-content">
+                        <h3>Personal Portfolio Website</h3>
+                        <p>A responsive portfolio showcasing my skills and projects</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="taskmanager.jpg" alt="To-Do List App">
+                    <div class="slide-content">
+                        <h3>To-Do List Application</h3>
+                        <p>Interactive task management app with local storage</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="weather.jpg" alt="Weather App">
+                    <div class="slide-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather information using API integration</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-btn prev" onclick="prevSlide()" aria-label="Previous slide">❮</button>
+            <button class="slider-btn next" onclick="nextSlide()" aria-label="Next slide">❯</button>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" onclick="goToSlide(0)"></span>
+                <span class="dot" onclick="goToSlide(1)"></span>
+                <span class="dot" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- All Projects -->
+    <section id="projects">
+        <h2>All Projects</h2>
+        
+        <div class="project">
+            <h3>Project 1: Personal Portfolio</h3>
+            <img src="portfolio.jpg" alt="Portfolio Website Screenshot" />
+            <p>A fully responsive personal portfolio website built with HTML, CSS, and JavaScript. Features include dark mode, smooth scrolling, and form validation.</p>
+            <p><strong>Technologies:</strong> HTML5, CSS3, JavaScript, Responsive Design</p>
+            <button onclick="alert('View project demo - Link to be added')">View Project</button>
+        </div>
+        
+        <div class="project">
+            <h3>Project 2: Task Manager</h3>
+            <img src="taskmanager.jpg" alt="Task Manager App Screenshot" />
+            <p>An interactive to-do list application that helps users organize their daily tasks. Includes features like adding, editing, deleting tasks, and marking them as complete.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Local Storage</p>
+            <button onclick="alert('View project demo - Link to be added')">View Project</button>
+        </div>
+        
+        <div class="project">
+            <h3>Project 3: Weather Dashboard</h3>
+            <img src="weather.jpg" alt="Weather Dashboard Screenshot" />
+            <p>A weather application that displays current weather conditions and forecasts. Uses API integration to fetch real-time weather data.</p>
+            <p><strong>Technologies:</strong> HTML, CSS, JavaScript, Weather API</p>
+            <button onclick="alert('View project demo - Link to be added')">View Project</button>
+        </div>
+    </section>
+    
+    <!-- Technical Skills -->
+    <section id="technical-skills">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Web Design</li>
+            <li>UI/UX Design Principles</li>
+            <li>Git & GitHub</li>
+            <li>Web Accessibility (WCAG)</li>
+            <li>Cross-browser Compatibility</li>
+            <li>Performance Optimization</li>
+        </ul>
+    </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 John Zabdiel Viloria. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

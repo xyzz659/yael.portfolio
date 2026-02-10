@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Personal portfolio of John Zabdiel Viloria - Web Developer">
+    <title>Home - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">❤️</button>
+    
+    <!-- Navigation -->
     <nav>
-        <a href="index.html">Home</a>
-        <a href="resume.html">Resume</a>
-        <a href="project.html">Projects</a>
-        <div class="name">
-            <h1>John Zabdiel Viloria</h1>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="index.html" class="active" aria-current="page">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
         </div>
-        <div class="header"><img src="images/profile.png" alt="images"></div>
-        <p class="des">Hello! I'm a high school student learning web development. I enjoy coding,
-            designing, and creating web projects!</p>
     </nav>
 
-    <section class="card">
-
-        <h2>Skills</h2>
+    <main>
+    <!-- Header / Hero Section -->
+    <header id="main-content">
+        <img src="pfp.jpg" alt="Profile Photo of John Zabdiel Viloria" />
+        <h1>John Zabdiel Viloria</h1>
+        <p>Hello! I'm a senior high school student learning web development. I enjoy coding, designing, and creating web projects!</p>
+    </header>
+    
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>My Skills</h2>
         <ul>
-            <li>HTML & CSS</li>
+            <li>APP DEVELOPING</li>
             <li>Responsive Design</li>
             <li>JavaScript Basics</li>
             <li>UI/UX Design Fundamentals</li>
+            <li>Git & Version Control</li>
+            <li>Graphic Designing</li>
         </ul>
-
     </section>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style.css">
-</body>
+    
+    <!-- About Me Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about creating beautiful and functional websites. Currently, I'm participating in an immersion program where I'm building my skills in web development. I love learning new technologies and applying them to real-world projects.</p>
+        <p>When I'm not coding, I enjoy exploring new design trends, reading tech blogs, and working on personal projects that challenge my creativity and problem-solving abilities or developing some games.</p>
+    </section>
+    
+    </main>
 
+    <footer>
+        <p>&copy; 2025 John Zabdiel Viloria. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
 </html>

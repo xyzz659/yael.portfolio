@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact John Zabdiel Viloria">
+    <title>Contact - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Dark Mode Toggle -->
+    <button class="dark-mode-toggle" onclick="toggleDarkMode()" aria-label="Toggle dark mode">❤️</button>
+    
+    <!-- Navigation -->
+    <nav>
+        <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </div>
+    </nav>
+
+    <main>
+    <!-- Contact Header -->
+    <header id="main-content">
+        <h1>Get In Touch</h1>
+        <p>Have a question or want to work together? Feel free to reach out!</p>
+    </header>
+    
+    <!-- Contact Form Section -->
+    <section>
+        <h2>Contact Form</h2>
+        <div class="contact-form">
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        placeholder="Enter your full name"
+                        required
+                    >
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Your Email *</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        placeholder="your.email@example.com"
+                        required
+                    >
+                    <span class="error-message"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        placeholder="What is this regarding?"
+                    >
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        placeholder="Write your message here..."
+                        required
+                    ></textarea>
+                    <span class="error-message"></span>
+                </div>
+                
+                <button type="submit" class="submit-btn">Send Message</button>
+                
+                <div class="success-message"></div>
+            </form>
+        </div>
+    </section>
+    
+    <!-- Contact Information -->
+    <section id="contact-info">
+        <h2>Other Ways to Connect</h2>
+        <div class="contact-info-grid">
+            <p><strong>📧 Email:</strong> zabdielviloriaj@gmail.com</p>
+            <p><strong>💼 LinkedIn:</strong> <a href="#">linkedin.com/in/johnzabdielviloria</a></p>
+            <p><strong>💻 GitHub:</strong> <a href="#">https://github.com/xyzz659/john.portfolio.git</a></p>
+            <p><strong>📍 Location:</strong> Philippines</p>
+        </div>
+    </section>
+    
+    </main>
+
+    <footer>
+        <p>&copy; 2025 John Zabdiel Viloria. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="../index.html">Home</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
